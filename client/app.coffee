@@ -16,7 +16,7 @@ AppClass = React.createClass
       socket.emit("new_source", { code: newJS })
   
   componentDidMount: () ->
-    socket = io.connect('http://ec2-50-18-149-128.us-west-1.compute.amazonaws.com:8000')
+    socket = io.connect('50.18.149.128:8000')
     socket.on "new_code", (data) =>
       @setState { currentCompiledCode: data.code.replace /\n/g, "<br />" }
 
