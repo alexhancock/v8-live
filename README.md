@@ -8,7 +8,7 @@ This is an experimental web app which lets you enter JavaScript code and then se
 
 ```bash
 $ npm install # grab dependencies
-$ webpack && node app.js # build the client bundle, and run the server
+$ webpack && sudo node app.js # build the client bundle, and run the server on port 80
 ```
 
-Visit `localhost:3000` to test it out.
+Visit `localhost` to test it out.
